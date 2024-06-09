@@ -1,0 +1,19 @@
+
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 20px;
+  width: 100%;
+  height: 100vh;
+}
+
+.navList{
+width: 20%;
+}
+
+.contentList{
+width: 20%;
+}

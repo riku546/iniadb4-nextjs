@@ -1,0 +1,33 @@
+.postContainer{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column ;
+  gap: 50px;
+}
+
+.inputarea{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputarea textarea{
+  width: 30%;
+  height: 200px;
+}
+
+.inputarea textarea:hover{
+  cursor: pointer;
+}
+
+.inputarea textarea:focus{
+  outline: none;
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+}

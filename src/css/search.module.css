@@ -1,0 +1,21 @@
+.searchContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.searchForm {
+  display: flex;
+  
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 999px;
+  background-color: #f0f2f5;
+}
+
+.searchForm input {
+  border: none;
+  background-color: #f0f2f5;
+}
+.searchForm input:focus {
+  outline: none;
+}

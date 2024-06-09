@@ -1,0 +1,27 @@
+.nav{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.link{
+  text-decoration: none;
+  color: black;
+}
+
+.element{
+  font-size: 30px;
+}
+
+.element:hover{
+  opacity: 0.6;
+}
+
+.postIcon{
+  width: 200px;
+}
+
+.postIcon:hover{
+  opacity: 0.6;
+}

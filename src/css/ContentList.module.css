@@ -1,0 +1,17 @@
+.contentLists {
+}
+
+.contentList {
+  display: flex;
+
+  gap: 5px;
+
+  width: 100%;
+}
+
+.text {
+  overflow-wrap: break-word;
+  width: 100%;
+  font-size: 20px;
+
+}
