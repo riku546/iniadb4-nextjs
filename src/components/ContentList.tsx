@@ -1,4 +1,4 @@
-"use client";
+
 
 import AndroidIcon from "@mui/icons-material/Android";
 import { useState } from "react";
