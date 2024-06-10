@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <div className={styles.searchContainer}>
       <div className={styles.searchForm}>
-        <div>
+        <div className={styles.searchIcon}>
           <SearchIcon />
         </div>
         <input type="text" placeholder="@" className={styles.input} />

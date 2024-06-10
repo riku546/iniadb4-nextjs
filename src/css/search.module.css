@@ -1,11 +1,17 @@
 .searchContainer {
   display: flex;
   justify-content: center;
+  align-items: center;
+}
+
+.searchIcon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .searchForm {
   display: flex;
-  
   padding: 10px;
   border: 1px solid lightgray;
   border-radius: 999px;
@@ -13,6 +19,7 @@
 }
 
 .searchForm input {
+  width: 350px;
   border: none;
   background-color: #f0f2f5;
 }

@@ -7,10 +7,11 @@ import NextLink from "next/link";
 import Selecter from "@/components/Selecter";
 
 const PostPage = () => {
+  const categorys = ["投稿" , "解説" , "進捗"]
   return (
     <div className={styles.postContainer}>
       <div className={styles.inputarea}>
-        <Selecter />
+        <Selecter CategoryList={categorys} />
 
         <textarea name="" id="" placeholder="text"></textarea>
       </div>
