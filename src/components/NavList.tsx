@@ -6,11 +6,24 @@ import EmailIcon from "@mui/icons-material/Email";
 import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import EventRepeatIcon from "@mui/icons-material/EventRepeat";
 import FeedIcon from "@mui/icons-material/Feed";
+import SearchIcon from "@mui/icons-material/Search";
+
 const NavList = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.element}>
+        <SearchIcon />
+        <NextLink href="./SearchPage" className={styles.link}>
+          search
+        </NextLink>
+      </div>
+      <div className={styles.element}>
         <NextLink href="/" className={styles.link}>
+          Home
+        </NextLink>
+      </div>
+      <div className={styles.element}>
+        <NextLink href="/AdBee" className={styles.link}>
           adBee
         </NextLink>
       </div>
@@ -46,7 +59,7 @@ const NavList = () => {
       </div>
       <div className={styles.postIcon}>
         <a href="./postPage">
-          <img src="/icon2.png" alt="" width="100px"/>
+          <img src="/icon2.png" alt="" width="100px" />
         </a>
       </div>
     </nav>
