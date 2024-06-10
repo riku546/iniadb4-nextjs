@@ -13,16 +13,19 @@ export default function Selecter({ CategoryList }) {
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 120 }}>
-        <Select value={age} onChange={handleChange} displayEmpty>
+        <Select value={age} onChange={handleChange} autoWidth displayEmpty>
           <MenuItem value="">
-            <em>なし</em>
+            <em>{CategoryList[0]}</em>
           </MenuItem>
-          {CategoryList.map((category: String, categoryIndex: number) => (
-            <MenuItem value={category} key={categoryIndex}>
-  
-              {category}
-            </MenuItem>
-          ))}
+          {CategoryList.map((category: String, categoryIndex: number) =>
+            categoryIndex === 0 ? (
+              ""
+            ) : (
+              <MenuItem value={category} key={categoryIndex}>
+                {category}
+              </MenuItem>
+            )
+          )}
         </Select>
       </FormControl>
     </div>
