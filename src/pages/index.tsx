@@ -10,7 +10,7 @@ export default function Home() {
         <NavList />
       </div>
       <div className={styles.contentList}>
-        <ContentList />
+        <ContentList  text={"home"}/>
       </div>
     </main>
   );

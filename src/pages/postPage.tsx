@@ -20,6 +20,7 @@ const PostPage = () => {
 
         <Button
           variant="outlined"
+          style={{borderColor:"orange" , color:"orange"}}
           startIcon={<RestartAltIcon />}
           className={styles.resetButton}
         >
@@ -27,6 +28,7 @@ const PostPage = () => {
         </Button>
         <Button
           variant="contained"
+          style={{background:"orange"}}
           endIcon={<SendIcon />}
           className={styles.submitButton}
         >

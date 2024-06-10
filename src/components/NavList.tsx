@@ -11,7 +11,7 @@ const NavList = () => {
     <nav className={styles.nav}>
       <div className={styles.element}>
         <NextLink href="/" className={styles.link}>
-          adB4
+          adBee
         </NextLink>
       </div>
       <div className={styles.element}>
