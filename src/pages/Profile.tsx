@@ -1,8 +1,8 @@
 import UserInfo from '@/components/UserInfo'
 import React from 'react'
-import styles from "../css/Profile.module.css"
+import styles from "../css/pageCss/Profile.module.css"
 import NavList from '@/components/NavList'
-import ContentList from '@/components/ContentList'
+import UserPageContent from '@/components/UserPageContent'
 
 const profile = () => {
   return (
@@ -13,7 +13,9 @@ const profile = () => {
       <div className={styles.UserInfo}>
 
       < UserInfo/>
-      <ContentList/>
+      <UserPageContent/>
+
+      
       </div>
           
 

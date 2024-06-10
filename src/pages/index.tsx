@@ -1,4 +1,4 @@
-import styles from "../css/index.module.css";
+import styles from "../css/pageCss/index.module.css";
 
 import NavList from "@/components/NavList";
 import ContentList from "../components/ContentList";

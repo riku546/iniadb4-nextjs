@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import RestartAltIcon from "@mui/icons-material/RestartAlt";
-import styles from "../css/postPage.module.css";
+import styles from "../css/pageCss/postPage.module.css";
 import NextLink from "next/link";
 import Selecter from "@/components/Selecter";
 
