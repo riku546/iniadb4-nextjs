@@ -10,7 +10,7 @@ const NavList = () => {
   return (
     <nav className={styles.nav}>
       <div className={styles.element}>
-        <NextLink href="./adB4" className={styles.link}>
+        <NextLink href="/" className={styles.link}>
           adB4
         </NextLink>
       </div>
