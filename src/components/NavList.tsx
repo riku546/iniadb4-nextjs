@@ -16,7 +16,7 @@ const NavList = () => {
       </div>
       <div className={styles.element}>
         <HelpIcon />
-        <NextLink href="./question" className={styles.link}>
+        <NextLink href="./questionPage" className={styles.link}>
           質問
         </NextLink>
       </div>
