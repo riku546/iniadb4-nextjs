@@ -9,3 +9,9 @@
     gap: 20px;
     
 }
+
+.SearchSuggests{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
