@@ -6,22 +6,30 @@ import NextLink from "next/link";
 import UseSearchPage from "@/customHook/UseSearchPage";
 
 const SearchPage = () => {
-  const { categoryList, searchSuggests, Selectedcategory } = UseSearchPage();
+  const { categoryList, searchSuggests, Selectedcategory, setCategoryFn } =
+    UseSearchPage();
   return (
     <div className={styles.container}>
       <div className={styles.searchArea}>
         <NextLink href="/">Homeに戻る</NextLink>
 
-        <Selecter CategoryList={categoryList}  />
+        <Selecter
+          CategoryList={categoryList}
+          handleChange={setCategoryFn}
+          Selectedcategory={Selectedcategory}
+        />
+
         <Search />
       </div>
+
       <div className={styles.SearchSuggests}>
+        <b>検索候補タグ</b>
         <div className={styles.gridLayout}>
-
-
           {searchSuggests[Selectedcategory].map(
             (category: String, categoryIndex: number) => (
-              <p key={categoryIndex} className={styles.categoryTag}>{category}</p>
+              <p key={categoryIndex} className={styles.categoryTag}>
+                {category}
+              </p>
             )
           )}
         </div>
