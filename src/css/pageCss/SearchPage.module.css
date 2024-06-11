@@ -14,4 +14,22 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+}
+
+.gridLayout{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.categoryTag{
+    border: 1px solid orange;
+    text-align: center;
+    padding: 10px;
+}
+
+.categoryTag:hover{
+    opacity: 0.6;
+
 }

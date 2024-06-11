@@ -4,27 +4,27 @@ import Search from "@/components/Search";
 import Selecter from "@/components/Selecter";
 import NextLink from "next/link";
 import UseSearchPage from "@/customHook/UseSearchPage";
-import { Grid } from "@mui/material";
 
 const SearchPage = () => {
-  const { categorys } = UseSearchPage();
+  const { categoryList, searchSuggests, Selectedcategory } = UseSearchPage();
   return (
     <div className={styles.container}>
       <div className={styles.searchArea}>
         <NextLink href="/">Homeに戻る</NextLink>
 
-        <Selecter CategoryList={categorys} />
+        <Selecter CategoryList={categoryList}  />
         <Search />
       </div>
       <div className={styles.SearchSuggests}>
-        <Grid container spacing={2} columns={16} >
-          <Grid item xs={8}>
-            <h1>f</h1>
-          </Grid>
-          <Grid item xs={8}>
-            <h1>f</h1>
-          </Grid>
-        </Grid>
+        <div className={styles.gridLayout}>
+
+
+          {searchSuggests[Selectedcategory].map(
+            (category: String, categoryIndex: number) => (
+              <p key={categoryIndex} className={styles.categoryTag}>{category}</p>
+            )
+          )}
+        </div>
       </div>
     </div>
   );
