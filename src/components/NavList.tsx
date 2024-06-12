@@ -49,7 +49,7 @@ const NavList = () => {
       </div>
       <div className={styles.element}>
         <EmailIcon />
-        <NextLink href="./dmessage" className={styles.link}>
+        <NextLink href="./messagePage" className={styles.link}>
           メッセージ
         </NextLink>
       </div>
