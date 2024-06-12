@@ -1,11 +1,29 @@
-import React from 'react'
+import Hamburger from "@/components/Hamburger";
+import UseHamburger from "@/customHook/UseHamburger";
+import React, { useState } from "react";
 
-const messagePage = () => {
+const MessagePage = () => {
+  const { isHamburger, setIsHamburger } = UseHamburger();
+  const displayHamburger = () => {
+    if (isHamburger) {
+      return <Hamburger />;
+    } else {
+      return "rr";
+    }
+  };
   return (
-    <div>
-                
-    </div>
-  )
-}
+    <>
+      <button
+        onClick={() => {
+          setIsHamburger((prev) => !prev);
+          console.log("ff");
+        }}
+      >
+        ボタン
+      </button>
+      {displayHamburger()}
+    </>
+  );
+};
 
-export default messagePage
+export default MessagePage;
