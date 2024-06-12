@@ -1,8 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { useState } from 'react'
 
 const UseHamburger = () => {
-    const [isHamburger , setIsHamburger] = useState(false)
-  return {isHamburger , setIsHamburger}
+  const [isOpenHamburger , setIsOpenHamburger] = useState<boolean>(false)
+
+  const changeState = () =>{
+      setIsOpenHamburger((prev)=> !prev)
+ 
+  }
+
+return {isOpenHamburger , changeState}
 }
 
 export default UseHamburger
