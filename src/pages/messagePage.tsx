@@ -6,10 +6,11 @@ const MessagePage = () => {
 
 
   return (
-    <>
+    <div>
     <HamburgerMenu/>
 
-    </>
+
+    </div>
   );
 };
 

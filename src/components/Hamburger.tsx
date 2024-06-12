@@ -31,7 +31,9 @@ const HamburgerMenu = () => {
   );
   return (
     <div>
-      <Button onClick={toggleHamburger(true)}>Open drawer</Button>
+      <Button onClick={toggleHamburger(true)}>
+        <img src="/hamburger.png" alt="" width="100px"/>
+      </Button>
       <Drawer open={isOpenHamburger} onClose={toggleHamburger(false)}>
         {DrawerList}
       </Drawer>
