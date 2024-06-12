@@ -37,13 +37,13 @@ const NavList = () => {
       </div>
       <div className={styles.element}>
         <FeedIcon />
-        <NextLink href="./explanation" className={styles.link}>
+        <NextLink href="./CommentaryPage" className={styles.link}>
           解説
         </NextLink>
       </div>
       <div className={styles.element}>
         <EventRepeatIcon />
-        <NextLink href="./progress" className={styles.link}>
+        <NextLink href="./progressPage" className={styles.link}>
           進捗
         </NextLink>
       </div>

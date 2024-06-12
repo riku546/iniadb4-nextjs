@@ -1,10 +1,8 @@
-
-
 import AndroidIcon from "@mui/icons-material/Android";
 import { useState } from "react";
 import styles from "../css/ContentList.module.css";
 
-const ContentList = ({text}) => {
+const ContentList = ({ text }) => {
   const [list, setList] = useState([
     {
       msg: "aaaaaaaaaaaaaaaaaaaaaaaa",
@@ -19,6 +17,7 @@ const ContentList = ({text}) => {
       {list.map((row: { msg: String }, rowIndex: number) => (
         <div key={rowIndex} className={styles.contentList}>
           <AndroidIcon />
+
           <p className={styles.text}>{row.msg}</p>
         </div>
       ))}
