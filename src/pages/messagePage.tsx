@@ -1,13 +1,17 @@
-import Hamburger from "@/components/Hamburger";
-import UseHamburger from "@/customHook/UseHamburger";
+
+import HamburgerMenu from "@/components/Hamburger";
 import React, { useState } from "react";
 
 const MessagePage = () => {
 
-  return (
-    <>
 
-    </>
+
+  return (
+    <div>
+    <HamburgerMenu/>
+
+
+    </div>
   );
 };
 

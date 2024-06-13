@@ -8,7 +8,6 @@ export default function Selecter({
   handleChange,
   Selectedcategory,
 }) {
-console.log(Selectedcategory)
 
   return (
     <div>

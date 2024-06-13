@@ -1,19 +1,49 @@
-
-
 .main {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   gap: 20px;
   width: 100%;
   height: 100vh;
 }
 
-.navList{
-width: 20%;
+.container {
+  height: 100vh;
+}
+
+.footer{
+  display: none;
+}
+
+.NavLayout{
+
+  display: flex;
+  align-items: center;
 }
 
 .contentList{
-width: 20%;
+  margin-top: 50px;
+}
+
+@media (max-width: 900px) {
+
+
+  .contentList {
+    display: flex;
+    height: 100%;
+    margin-top: 30px;
+    align-items: self-start;
+  }
+
+  .navList {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 5px;
+  }
 }
