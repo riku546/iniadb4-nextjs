@@ -60,9 +60,9 @@ const NavList = () => {
         </NextLink>
       </div>
       <div className={styles.postIcon}>
-        <a href="./postPage">
+        <NextLink href="./postPage">
           <img src="/icon2.png" alt="" width="100px" />
-        </a>
+        </NextLink>
       </div>
     </nav>
   );

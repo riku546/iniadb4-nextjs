@@ -2,6 +2,7 @@ import styles from "../css/pageCss/index.module.css";
 
 import NavList from "@/components/NavList";
 import ContentList from "../components/ContentList";
+import UnderMenu from "@/components/UnderMenu";
 
 export default function Home() {
   return (
@@ -17,12 +18,7 @@ export default function Home() {
         </div>
       </main>
       <footer className={styles.footer}>
-        <div>
-          <img src="/hamburger.png" alt="" width="100px" />
-        </div>
-        <div>
-          <img src="/icon2.png" alt="" width="100px" />
-        </div>
+        <UnderMenu />
       </footer>
     </div>
   );

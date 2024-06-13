@@ -11,3 +11,54 @@
   grid-template-rows: 1fr 4fr;
   grid-gap: 40px;
 }
+
+.categoryList{
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+
+
+.UserInfoContainer{
+  display: flex;
+  flex-direction: column;
+    gap: 20px;
+  
+  }
+   
+  
+  
+  .infos{
+    display: flex;
+    gap: 20px;
+  }
+  
+  .icon{
+    font-size: 100px;
+  }
+  
+  
+  .nameAndLevel{
+    display: flex;
+    gap: 40px;
+    font-size: 40px;
+  }
+  
+  .follows{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+  }
+  
+  .badges{
+    display: flex;
+    gap: 25px;
+    list-style: none;
+  }
+  
+  .badges li{
+    border: 1px solid black;
+    padding: 12px;
+    border-radius: 10px;
+  }

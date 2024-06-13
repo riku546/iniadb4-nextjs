@@ -1,13 +1,13 @@
-.postContainer{
+.postContainer {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction:column ;
+  flex-direction: column;
   gap: 50px;
 }
 
-.inputarea{
+.inputarea {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -15,20 +15,29 @@
   gap: 20px;
 }
 
-.inputarea textarea{
+.inputarea textarea {
   width: 30%;
   height: 200px;
 }
 
-.inputarea textarea:hover{
+.inputarea textarea:hover {
   cursor: pointer;
 }
 
-.inputarea textarea:focus{
+.inputarea textarea:focus {
   outline: none;
 }
 
-.buttons{
+.buttons {
   display: flex;
   gap: 30px;
+}
+
+@media (max-width: 900px) {
+  .inputarea {
+    flex-direction: column;
+  }
+  .inputarea textarea {
+    width: 80%;
+  }
 }

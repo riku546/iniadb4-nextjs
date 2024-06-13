@@ -1,4 +1,3 @@
-
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
@@ -8,6 +7,8 @@ import ListItemButton from "@mui/material/ListItemButton";
 import React from "react";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
+import NextLink from "next/link";
+
 import UseHamburger from "@/customHook/UseHamburger";
 
 const HamburgerMenu = () => {
@@ -21,10 +22,15 @@ const HamburgerMenu = () => {
       <List>
         {HamburgerList.map((HamburgerObject, index) => (
           <ListItem key={HamburgerObject.text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>{HamburgerObject.icon}</ListItemIcon>
-              <ListItemText primary={HamburgerObject.text} />
-            </ListItemButton>
+            <NextLink
+              href={HamburgerObject.url}
+              style={{ textDecoration: "none", color: "black" }}
+            >
+              <ListItemButton>
+                <ListItemIcon>{HamburgerObject.icon}</ListItemIcon>
+                <ListItemText primary={HamburgerObject.text} />
+              </ListItemButton>
+            </NextLink>
           </ListItem>
         ))}
       </List>
@@ -33,7 +39,7 @@ const HamburgerMenu = () => {
   return (
     <div>
       <Button onClick={toggleHamburger(true)}>
-        <img src="/hamburger.png" alt="" width="100px"/>
+        <img src="/hamburger.png" alt="" width="100px" />
       </Button>
       <Drawer open={isOpenHamburger} onClose={toggleHamburger(false)}>
         {DrawerList}
