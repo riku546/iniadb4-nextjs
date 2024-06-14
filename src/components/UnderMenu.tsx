@@ -2,7 +2,6 @@ import React from "react";
 import HamburgerMenu from "./Hamburger";
 import NextLink from "next/link";
 
-
 const UnderMenu = () => {
   return (
     <>
@@ -10,7 +9,7 @@ const UnderMenu = () => {
         <HamburgerMenu />
       </div>
       <div>
-      <NextLink href="./postPage">
+        <NextLink href="./postPage">
           <img src="/icon2.png" alt="" width="100px" />
         </NextLink>
       </div>

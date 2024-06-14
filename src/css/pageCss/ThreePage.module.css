@@ -1,0 +1,39 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.gridLayout {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.h1Tage {
+  text-align: center;
+}
+
+@media (max-width: 900px) {
+  .container{
+    display: flex;
+    align-items: start;
+
+  }
+
+  .h1Tage{
+    margin-bottom: 20px;
+  }
+
+  .Navbar {
+    display: none;
+  }
+
+
+
+  .gridLayout {
+    display: flex;
+  }
+
+
+}
