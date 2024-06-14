@@ -11,11 +11,12 @@ export default function Selecter({
 
   return (
     <div>
-      <FormControl sx={{ m: 1, minWidth: 120 }}>
+      <FormControl sx={{ m: 1, minWidth: 100 }}>
         <Select
           value={
             Selectedcategory 
           }
+          
           onChange={handleChange}
           autoWidth
           displayEmpty

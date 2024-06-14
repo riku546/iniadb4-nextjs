@@ -17,16 +17,16 @@ const SearchPage = () => {
               <ArrowCircleLeftIcon />
             </NextLink>
           </div>
+          <div>
+            <Selecter
+              CategoryList={categoryList}
+              handleChange={setCategoryFn}
+              Selectedcategory={Selectedcategory}
+            />
+          </div>
           <div className={styles.searchBox}>
             <Search />
           </div>
-        </div>
-        <div>
-          <Selecter
-            CategoryList={categoryList}
-            handleChange={setCategoryFn}
-            Selectedcategory={Selectedcategory}
-          />
         </div>
       </div>
 
