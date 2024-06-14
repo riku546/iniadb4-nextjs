@@ -26,3 +26,11 @@
 .searchForm input:focus {
   outline: none;
 }
+
+
+
+@media (max-width:900px) {
+  .searchForm input{
+    width:260px
+  }
+}

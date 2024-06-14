@@ -35,3 +35,28 @@
     opacity: 0.6;
 
 }
+
+.flexLayout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .arrowCircleLeftIcon{
+    width: 50px;
+  }
+
+@media(max-width:900px){
+    .searchArea{
+        flex-direction: column;
+    }
+
+    .searchBox{
+        margin: 10px ;
+    }
+
+    .gridLayout{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

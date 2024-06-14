@@ -4,22 +4,30 @@ import Search from "@/components/Search";
 import Selecter from "@/components/Selecter";
 import NextLink from "next/link";
 import UseSearchPage from "@/customHook/UseSearchPage";
-
+import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
 const SearchPage = () => {
   const { categoryList, searchSuggests, Selectedcategory, setCategoryFn } =
     UseSearchPage();
   return (
     <div className={styles.container}>
       <div className={styles.searchArea}>
-        <NextLink href="/">Homeに戻る</NextLink>
-
-        <Selecter
-          CategoryList={categoryList}
-          handleChange={setCategoryFn}
-          Selectedcategory={Selectedcategory}
-        />
-
-        <Search />
+        <div className={styles.flexLayout}>
+          <div className={styles.arrowCircleLeftIcon}>
+            <NextLink href="/">
+              <ArrowCircleLeftIcon />
+            </NextLink>
+          </div>
+          <div className={styles.searchBox}>
+            <Search />
+          </div>
+        </div>
+        <div>
+          <Selecter
+            CategoryList={categoryList}
+            handleChange={setCategoryFn}
+            Selectedcategory={Selectedcategory}
+          />
+        </div>
       </div>
 
       <div className={styles.SearchSuggests}>
