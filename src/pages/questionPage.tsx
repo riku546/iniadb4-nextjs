@@ -2,6 +2,7 @@ import NavList from "@/components/NavList";
 import React from "react";
 import styles from "../css/pageCss/ThreePage.module.css";
 import ContentList from "@/components/ContentList";
+import UnderMenu from "@/components/UnderMenu";
 
 const questionPage = () => {
   return (
@@ -16,6 +17,9 @@ const questionPage = () => {
             <ContentList text={"question"} />
           </div>
         </div>
+      </div>
+      <div className={styles.underMenu}>
+        <UnderMenu />
       </div>
     </>
   );

@@ -2,6 +2,8 @@ import NavList from "@/components/NavList";
 import React from "react";
 import styles from "../css/pageCss/ThreePage.module.css";
 import ContentList from "@/components/ContentList";
+import UnderMenu from "@/components/UnderMenu";
+
 const progressPage = () => {
   return (
     <>
@@ -15,6 +17,9 @@ const progressPage = () => {
             <ContentList text={"progress"} />
           </div>
         </div>
+      </div>
+      <div className={styles.underMenu}>
+        <UnderMenu />
       </div>
     </>
   );

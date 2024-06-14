@@ -17,9 +17,9 @@ export default function Home() {
           <ContentList text={"home"} />
         </div>
       </main>
-      <footer className={styles.footer}>
+      <div className={styles.underMenu}>
         <UnderMenu />
-      </footer>
+      </div>
     </div>
   );
 }

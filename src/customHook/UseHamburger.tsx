@@ -13,7 +13,7 @@ const UseHamburger = () => {
   };
   const HamburgerList = [
     { text: "search", icon: <SearchIcon /> , url:"./SearchPage"},
-    { text: "Home", icon: <HomeIcon /> ,  url:"./index"},
+    { text: "Home", icon: <HomeIcon /> ,  url:"./"},
     { text: "adBee" , url:"./AdBee" },
     { text: "質問", icon: <HelpIcon />  , url:"./questionPage"},
     { text: "解説", icon: <FeedIcon /> , url:"./CommentaryPage" },
