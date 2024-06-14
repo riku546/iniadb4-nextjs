@@ -14,18 +14,17 @@
   text-align: center;
 }
 
-.underMenu{
+.underMenu {
   display: none;
 }
 
 @media (max-width: 700px) {
-  .container{
+  .container {
     display: flex;
     align-items: start;
-
   }
 
-  .h1Tage{
+  .h1Tage {
     margin-bottom: 20px;
   }
 
@@ -33,13 +32,11 @@
     display: none;
   }
 
-
-
   .gridLayout {
     display: flex;
   }
 
-  .underMenu{
+  .underMenu {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -47,6 +44,4 @@
     position: absolute;
     bottom: 5px;
   }
-
-
 }

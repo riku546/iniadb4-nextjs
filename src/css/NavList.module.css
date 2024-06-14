@@ -1,27 +1,27 @@
-.nav{
+.nav {
   display: flex;
   flex-direction: column;
   gap: 5px;
   text-decoration: none;
 }
 
-.link{
+.link {
   text-decoration: none;
   color: black;
 }
 
-.element{
+.element {
   font-size: 30px;
 }
 
-.element:hover{
+.element:hover {
   opacity: 0.6;
 }
 
-.postIcon{
+.postIcon {
   width: 200px;
 }
 
-.postIcon:hover{
+.postIcon:hover {
   opacity: 0.6;
 }

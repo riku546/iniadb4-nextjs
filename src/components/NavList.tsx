@@ -7,7 +7,7 @@ import AccountBoxIcon from "@mui/icons-material/AccountBox";
 import EventRepeatIcon from "@mui/icons-material/EventRepeat";
 import FeedIcon from "@mui/icons-material/Feed";
 import SearchIcon from "@mui/icons-material/Search";
-import HomeIcon from '@mui/icons-material/Home';
+import HomeIcon from "@mui/icons-material/Home";
 
 const NavList = () => {
   return (
@@ -19,7 +19,7 @@ const NavList = () => {
         </NextLink>
       </div>
       <div className={styles.element}>
-        <HomeIcon/>
+        <HomeIcon />
         <NextLink href="/" className={styles.link}>
           Home
         </NextLink>

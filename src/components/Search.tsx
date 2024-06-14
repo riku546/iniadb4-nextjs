@@ -7,7 +7,7 @@ const Search = () => {
     <div className={styles.searchContainer}>
       <div className={styles.searchForm}>
         <div className={styles.searchIcon}>
-          <SearchIcon  />
+          <SearchIcon />
         </div>
         <input type="text" placeholder="@" className={styles.input} />
       </div>

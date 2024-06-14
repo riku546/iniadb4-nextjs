@@ -12,14 +12,14 @@ const UseHamburger = () => {
     setIsOpenHamburger(newOpen);
   };
   const HamburgerList = [
-    { text: "search", icon: <SearchIcon /> , url:"./SearchPage"},
-    { text: "Home", icon: <HomeIcon /> ,  url:"./"},
-    { text: "adBee" , url:"./AdBee" },
-    { text: "質問", icon: <HelpIcon />  , url:"./questionPage"},
-    { text: "解説", icon: <FeedIcon /> , url:"./CommentaryPage" },
-    { text: "進捗", icon: <EventRepeatIcon /> , url:"./progressPage" },
-    { text: "メッセージ", icon: <EmailIcon /> , url:"./messagePage" },
-    { text: "マイページ", icon: <AccountBoxIcon /> , url:"./Profile"},
+    { text: "search", icon: <SearchIcon />, url: "./SearchPage" },
+    { text: "Home", icon: <HomeIcon />, url: "./" },
+    { text: "adBee", url: "./AdBee" },
+    { text: "質問", icon: <HelpIcon />, url: "./questionPage" },
+    { text: "解説", icon: <FeedIcon />, url: "./CommentaryPage" },
+    { text: "進捗", icon: <EventRepeatIcon />, url: "./progressPage" },
+    { text: "メッセージ", icon: <EmailIcon />, url: "./messagePage" },
+    { text: "マイページ", icon: <AccountBoxIcon />, url: "./Profile" },
   ];
   return { isOpenHamburger, toggleHamburger, HamburgerList };
 };

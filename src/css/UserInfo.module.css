@@ -1,41 +1,37 @@
-.UserInfoContainer{
-display: flex;
-flex-direction: column;
+.UserInfoContainer {
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-
 }
- 
 
-
-.infos{
+.infos {
   display: flex;
   gap: 20px;
 }
 
-.icon{
+.icon {
   font-size: 100px;
 }
 
-
-.nameAndLevel{
+.nameAndLevel {
   display: flex;
   gap: 40px;
   font-size: 40px;
 }
 
-.follows{
+.follows {
   display: flex;
   gap: 20px;
   font-size: 20px;
 }
 
-.badges{
+.badges {
   display: flex;
   gap: 25px;
   list-style: none;
 }
 
-.badges li{
+.badges li {
   border: 1px solid black;
   padding: 12px;
   border-radius: 10px;

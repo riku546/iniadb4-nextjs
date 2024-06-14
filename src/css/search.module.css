@@ -4,7 +4,7 @@
   align-items: center;
 }
 
-.searchIcon{
+.searchIcon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,10 +27,8 @@
   outline: none;
 }
 
-
-
-@media (max-width:900px) {
-  .searchForm input{
-    width:200px
+@media (max-width: 900px) {
+  .searchForm input {
+    width: 200px;
   }
 }

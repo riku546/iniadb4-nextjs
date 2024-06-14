@@ -8,19 +8,15 @@ export default function Selecter({
   handleChange,
   Selectedcategory,
 }) {
-
   return (
     <div>
       <FormControl sx={{ m: 1, minWidth: 100 }}>
         <Select
-          value={
-            Selectedcategory 
-          }
-          
+          value={Selectedcategory}
           onChange={handleChange}
           autoWidth
           displayEmpty
-          inputProps={{ 'aria-label': 'Without label' }}
+          inputProps={{ "aria-label": "Without label" }}
         >
           <MenuItem value={CategoryList[0]}>
             <em>{CategoryList[0]}</em>
