@@ -2,7 +2,10 @@ import React, { useState } from "react";
 
 const UseContentList = () => {
   const [content, setContent] = useState([
-    { msg: "aaaaaaaaaaaaaaaaaaaaaaaa", userName: "enoki" },
+    {
+      msg: "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      userName: "enoki",
+    },
     { msg: "aaaaaaaaaaaaaaaaaaaaaaaa", userName: "enoki" },
     { msg: "aaaaaaaaaaaaaaaaaaaaaaaa", userName: "enoki" },
     { msg: "aaaaaaaaaaaaaaaaaaaaaaaa", userName: "enoki" },

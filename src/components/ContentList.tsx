@@ -1,5 +1,4 @@
 import AndroidIcon from "@mui/icons-material/Android";
-import { useState } from "react";
 import styles from "../css/ContentList.module.css";
 import UseContentList from "@/customHook/UseContentList";
 
