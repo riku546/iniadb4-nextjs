@@ -1,20 +1,14 @@
 import AndroidIcon from "@mui/icons-material/Android";
 import { useState } from "react";
 import styles from "../css/ContentList.module.css";
+import UseContentList from "@/customHook/UseContentList";
 
 const ContentList = ({ text }) => {
-  const [list, setList] = useState([
-    {
-      msg: "aaaaaaaaaaaaaaaaaaaaaaaa",
-    },
-    { msg: "aaaaaaaaaaaaaaaaaaaaaaaa" },
-    { msg: "aaaaaaaaaaaaaaaaaaaaaaaa" },
-    { msg: "aaaaaaaaaaaaaaaaaaaaaaaa" },
-  ]);
+  const { content, setContent } = UseContentList();
 
   return (
     <div className={styles.contentLists}>
-      {list.map((row: { msg: String }, rowIndex: number) => (
+      {content.map((row: { msg: String }, rowIndex: number) => (
         <div key={rowIndex} className={styles.contentList}>
           <AndroidIcon />
 
