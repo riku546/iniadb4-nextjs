@@ -5,14 +5,14 @@
   text-decoration: none;
   padding: 20px 35px;
   justify-content: center;
-  background-color: rgba(40, 38, 38, 0.586);
+  background-color:rgba(128, 128, 128, 0.137);
   border-radius: 20px;
   max-width: 288px;
 }
 
 .link {
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 .element {

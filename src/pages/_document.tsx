@@ -4,9 +4,9 @@ import CssBaseline from '@mui/material/CssBaseline';
  
 //ダークモード
 const darkTheme = createTheme({
-  palette: {
-    mode: 'dark',
-  },
+  // palette: {
+  //   mode: 'dark',
+  // },
 });
 
 

@@ -8,25 +8,27 @@ import React from "react";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import NextLink from "next/link";
-import { styled } from "@mui/system";
-import styles from "../css/Hamburger.module.css";
 
 import UseHamburger from "@/customHook/UseHamburger";
 
 const HamburgerMenu = () => {
   const { isOpenHamburger, toggleHamburger, HamburgerList } = UseHamburger();
+
   const DrawerList = (
     <Box
-      sx={{ width: 250 }}
+      sx={{ width: 300 }}
       role="presentation"
       onClick={toggleHamburger(false)}
     >
-      <List style={{ backgroundColor: "black" }}>
+      <List>
         {HamburgerList.map((HamburgerObject, index) => (
           <ListItem key={HamburgerObject.text} disablePadding>
             <NextLink
               href={HamburgerObject.url}
-              style={{ textDecoration: "none", color: "white" }}
+              style={{
+                textDecoration: "none",
+                color: "black",
+              }}
             >
               <ListItemButton>
                 <ListItemIcon>{HamburgerObject.icon}</ListItemIcon>
@@ -44,11 +46,7 @@ const HamburgerMenu = () => {
       <Button onClick={toggleHamburger(true)}>
         <img src="/hamburger.png" alt="" width="100px" />
       </Button>
-      <Drawer
-        open={isOpenHamburger}
-        onClose={toggleHamburger(false)}
-        style={{ height: "100vh", backgroundColor: "black" }}
-      >
+      <Drawer open={isOpenHamburger} onClose={toggleHamburger(false)}>
         {DrawerList}
       </Drawer>
     </div>
