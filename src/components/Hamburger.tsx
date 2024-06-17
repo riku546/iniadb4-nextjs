@@ -15,7 +15,7 @@ const HamburgerMenu = () => {
   const { isOpenHamburger, toggleHamburger, HamburgerList } = UseHamburger();
   const DrawerList = (
     <Box
-      sx={{ width: 250 }}
+      sx={{ width: 250 , backgroundColor:"black" }}
       role="presentation"
       onClick={toggleHamburger(false)}
     >
@@ -24,7 +24,7 @@ const HamburgerMenu = () => {
           <ListItem key={HamburgerObject.text} disablePadding>
             <NextLink
               href={HamburgerObject.url}
-              style={{ textDecoration: "none", color: "black" }}
+              style={{ textDecoration: "none", color: "white" }}
             >
               <ListItemButton>
                 <ListItemIcon>{HamburgerObject.icon}</ListItemIcon>

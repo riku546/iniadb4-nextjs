@@ -16,7 +16,7 @@ const questionPage = () => {
           <ContentList text={"question"} />
         </div>
       </div>
-      <div className={styles.underMenu}>
+      <div className={styles.underMenuLayout}>
         <UnderMenu />
       </div>
     </>

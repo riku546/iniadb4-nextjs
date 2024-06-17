@@ -16,7 +16,7 @@ const CommentaryPage = () => {
           <ContentList text={"commentary"} />
         </div>
       </div>
-      <div className={styles.underMenu}>
+      <div className={styles.underMenuLayout}>
         <UnderMenu />
       </div>
     </>

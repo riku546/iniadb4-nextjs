@@ -16,7 +16,7 @@ const progressPage = () => {
           <ContentList text={"progress"} />
         </div>
       </div>
-      <div className={styles.underMenu}>
+      <div className={styles.underMenuLayout}>
         <UnderMenu />
       </div>
     </>

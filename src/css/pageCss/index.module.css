@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .main {
   display: flex;
   justify-content: center;
@@ -14,7 +19,7 @@
   display: none;
 }
 
-.underMenu {
+.underMenuLayout {
   display: none;
 }
 
@@ -30,11 +35,10 @@
     display: none;
   }
 
-  .underMenu {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    bottom: 5px;
+  .underMenuLayout {
+    display: block;
+    position: relative;
+    min-height: 112px;
   }
+
 }

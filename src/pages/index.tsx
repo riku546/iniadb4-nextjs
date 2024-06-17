@@ -3,6 +3,7 @@ import styles from "../css/pageCss/index.module.css";
 import NavList from "@/components/NavList";
 import ContentList from "../components/ContentList";
 import UnderMenu from "@/components/UnderMenu";
+import { stepLabelClasses } from "@mui/material";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
           <ContentList text={"home"} />
         </div>
       </main>
-      <div className={styles.underMenu}>
+      <div className={styles.underMenuLayout}>
         <UnderMenu />
       </div>
     </div>
