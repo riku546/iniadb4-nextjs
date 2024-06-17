@@ -34,7 +34,6 @@ const profile = () => {
               <li>8期生</li>
               <li>IGC2</li>
               <li>ArtWorks</li>
-
             </ul>
           </div>
           <div>
