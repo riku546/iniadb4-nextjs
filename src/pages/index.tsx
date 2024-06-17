@@ -9,10 +9,8 @@ export default function Home() {
     <div className={styles.container}>
       <h1 className={styles.title}>Home</h1>
       <main className={styles.main}>
-        <div className={styles.NavLayout}>
-          <div className={styles.navList}>
-            <NavList />
-          </div>
+        <div className={styles.navList}>
+          <NavList />
         </div>
         <div className={styles.contentList}>
           <ContentList text={"home"} />

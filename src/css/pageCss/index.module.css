@@ -1,33 +1,20 @@
 .main {
   display: flex;
   justify-content: center;
-
-  margin: 0 auto;
-  gap: 20px;
-  width: 100%;
+  /* grid-template-columns: 1fr 1fr; */
+  gap: 50px;
 }
 
-.container {
-}
-
-.title{
+.title {
   text-align: center;
-  margin-bottom:30px ;
+  margin-bottom: 30px;
 }
 
 .footer {
   display: none;
 }
 
-.NavLayout {
-  display: flex;
-  align-items: center;
-}
-
-.contentList {
-}
-
-.underMenu{
+.underMenu {
   display: none;
 }
 

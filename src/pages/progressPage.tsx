@@ -9,13 +9,11 @@ const progressPage = () => {
     <>
       <h1 className={styles.h1Tage}>進捗ページ</h1>
       <div className={styles.container}>
-        <div className={styles.gridLayout}>
-          <div className={styles.Navbar}>
-            <NavList />
-          </div>
-          <div className={styles.contentLayout}>
-            <ContentList text={"progress"} />
-          </div>
+        <div className={styles.Navbar}>
+          <NavList />
+        </div>
+        <div className={styles.contentLayout}>
+          <ContentList text={"progress"} />
         </div>
       </div>
       <div className={styles.underMenu}>
